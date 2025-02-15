@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation_manufacturer"
+    app:startDestination="@id/fragment_manuf_home">
+
+    <fragment
+        android:id="@+id/fragment_manuf_home"
+        android:name="com.project.drugmanagement.HomeScreen.Manufacturer.fragment_manuf_home"
+        android:label="fragment_manuf_home"
+        tools:layout="@layout/fragment_manuf_home" >
+        <action
+            android:id="@+id/action_fragment_manuf_home_to_addUserDetails"
+            app:destination="@id/addUserDetails" />
+        <action
+            android:id="@+id/action_fragment_manuf_home_to_fragment_createProduct"
+            app:destination="@id/fragment_createProduct" />
+        <action
+            android:id="@+id/action_fragment_manuf_home_to_fragment_newBatch"
+            app:destination="@id/fragment_newBatch" />
+        <action
+            android:id="@+id/action_fragment_manuf_home_to_fragment_sell"
+            app:destination="@id/fragment_sell" />
+    </fragment>
+    <activity
+        android:id="@+id/addUserDetails"
+        android:name="com.project.drugmanagement.AddUserDetails"
+        android:label="activity_add_user_details"
+        tools:layout="@layout/activity_add_user_details" />
+    <fragment
+        android:id="@+id/fragment_createProduct"
+        android:name="com.project.drugmanagement.HomeScreen.Manufacturer.fragment_createProduct"
+        android:label="fragment_create_product"
+        tools:layout="@layout/fragment_create_product" />
+    <fragment
+        android:id="@+id/fragment_newBatch"
+        android:name="com.project.drugmanagement.HomeScreen.Manufacturer.fragment_newBatch"
+        android:label="fragment_new_batch"
+        tools:layout="@layout/fragment_new_batch" />
+    <fragment
+        android:id="@+id/fragment_sell"
+        android:name="com.project.drugmanagement.HomeScreen.Manufacturer.fragment_sell"
+        android:label="fragment_sell"
+        tools:layout="@layout/fragment_sell" />
+</navigation>

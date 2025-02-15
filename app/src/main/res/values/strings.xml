@@ -1,0 +1,45 @@
+<resources>
+    <string name="app_name">DrugManagement</string>
+
+    <string-array name="roles">
+        <item>Manufacturer</item>
+        <item>Depo</item>
+        <item>Wholesaler</item>
+        <item>Retailer</item>
+        <item>Doctor</item>
+        <item>Drug Officer</item>
+    </string-array>
+
+    <string-array name="month">
+        <item>jan</item>
+        <item>feb</item>
+        <item>mar</item>
+        <item>apr</item>
+        <item>may</item>
+        <item>jun</item>
+        <item>jul</item>
+        <item>aug</item>
+        <item>sep</item>
+        <item>oct</item>
+        <item>nov</item>
+        <item>dec</item>
+    </string-array>
+    <string-array name="year">
+        <item>2022</item>
+        <item>2023</item>
+        <item>2024</item>
+        <item>2024</item>
+        <item>2025</item>
+        <item>2026</item>
+        <item>2027</item>
+        <item>2028</item>
+        <item>2029</item>
+        <item>2030</item>
+    </string-array>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+    <string name="sign_out">Sign Out</string>
+</resources>

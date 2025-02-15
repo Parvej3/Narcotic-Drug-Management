@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation_retailer"
+    app:startDestination="@id/fragment_retailer_home3">
+    <fragment
+        android:id="@+id/fragment_retailer_home3"
+        android:name="com.project.drugmanagement.HomeScreen.Retailer.fragment_retailer_home"
+        android:label="fragment_retailer_home"
+        tools:layout="@layout/fragment_retailer_home" >
+        <action
+            android:id="@+id/action_fragment_retailer_home3_to_addUserDetails4"
+            app:destination="@id/addUserDetails4" />
+        <action
+            android:id="@+id/action_fragment_retailer_home3_to_fragment_get_patientInfo"
+            app:destination="@id/fragment_get_patientInfo" />
+        <action
+            android:id="@+id/action_fragment_retailer_home3_to_fragment_retailer_sell2"
+            app:destination="@id/fragment_retailer_sell2" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragment_get_patientInfo"
+        android:name="com.project.drugmanagement.HomeScreen.Retailer.fragment_get_patientInfo"
+        android:label="fragment_get_patient_info"
+        tools:layout="@layout/fragment_get_patient_info" />
+    <activity
+        android:id="@+id/addUserDetails4"
+        android:name="com.project.drugmanagement.AddUserDetails"
+        android:label="activity_add_user_details"
+        tools:layout="@layout/activity_add_user_details" />
+    <fragment
+        android:id="@+id/fragment_retailer_sell2"
+        android:name="com.project.drugmanagement.HomeScreen.Retailer.fragment_retailer_sell"
+        android:label="fragment_retailer_sell"
+        tools:layout="@layout/fragment_retailer_sell" />
+</navigation>

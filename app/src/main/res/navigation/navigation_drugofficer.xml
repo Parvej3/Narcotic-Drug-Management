@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation_drugofficer"
+    app:startDestination="@id/fragment_drugOfficer_home">
+
+    <fragment
+        android:id="@+id/fragment_drugOfficer_home"
+        android:name="com.project.drugmanagement.HomeScreen.DrugOfficer.fragment_drugOfficer_home"
+        android:label="fragment_drug_officer_home"
+        tools:layout="@layout/fragment_drug_officer_home" >
+        <action
+            android:id="@+id/action_fragment_drugOfficer_home_to_fragment_drugOfficer_manufacturer"
+            app:destination="@id/fragment_drugOfficer_manufacturer" />
+        <action
+            android:id="@+id/action_fragment_drugOfficer_home_to_fragment_drugOfficer_depo"
+            app:destination="@id/fragment_drugOfficer_depo" />
+        <action
+            android:id="@+id/action_fragment_drugOfficer_home_to_fragment_drugOfficer_wholesaler"
+            app:destination="@id/fragment_drugOfficer_wholesaler" />
+        <action
+            android:id="@+id/action_fragment_drugOfficer_home_to_fragment_drugOfficer_retailer"
+            app:destination="@id/fragment_drugOfficer_retailer" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragment_drugOfficer_depo"
+        android:name="com.project.drugmanagement.HomeScreen.DrugOfficer.fragment_drugOfficer_depo"
+        android:label="fragment_drug_officer_depo"
+        tools:layout="@layout/fragment_drug_officer_depo" >
+        <action
+            android:id="@+id/action_fragment_drugOfficer_depo_to_fragment_do_depo_purchase"
+            app:destination="@id/fragment_do_depo_purchase" />
+        <action
+            android:id="@+id/action_fragment_drugOfficer_depo_to_fragment_do_depo_sell"
+            app:destination="@id/fragment_do_depo_sell" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragment_drugOfficer_manufacturer"
+        android:name="com.project.drugmanagement.HomeScreen.DrugOfficer.fragment_drugOfficer_manufacturer"
+        android:label="fragment_drug_officer_manufacturer"
+        tools:layout="@layout/fragment_drug_officer_manufacturer" >
+        <action
+            android:id="@+id/action_fragment_drugOfficer_manufacturer_to_fragment_do_manfacturer_production"
+            app:destination="@id/fragment_do_manfacturer_production" />
+        <action
+            android:id="@+id/action_fragment_drugOfficer_manufacturer_to_fragment_do_manufacturer_sell"
+            app:destination="@id/fragment_do_manufacturer_sell" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragment_drugOfficer_retailer"
+        android:name="com.project.drugmanagement.HomeScreen.DrugOfficer.fragment_drugOfficer_retailer"
+        android:label="fragment_drug_officer_retailer"
+        tools:layout="@layout/fragment_drug_officer_retailer" >
+        <action
+            android:id="@+id/action_fragment_drugOfficer_retailer_to_fragment_do_retailer_purchase"
+            app:destination="@id/fragment_do_retailer_purchase" />
+        <action
+            android:id="@+id/action_fragment_drugOfficer_retailer_to_fragment_do_retailer_sell"
+            app:destination="@id/fragment_do_retailer_sell" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragment_drugOfficer_wholesaler"
+        android:name="com.project.drugmanagement.HomeScreen.DrugOfficer.fragment_drugOfficer_wholesaler"
+        android:label="fragment_drug_officer_wholesaler"
+        tools:layout="@layout/fragment_drug_officer_wholesaler" >
+        <action
+            android:id="@+id/action_fragment_drugOfficer_wholesaler_to_fragment_do_wholesaler_purchase"
+            app:destination="@id/fragment_do_wholesaler_purchase" />
+        <action
+            android:id="@+id/action_fragment_drugOfficer_wholesaler_to_fragment_do_wholesaler_sell"
+            app:destination="@id/fragment_do_wholesaler_sell" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragment_do_manfacturer_production"
+        android:name="com.project.drugmanagement.HomeScreen.DrugOfficer.fragment_do_manfacturer_production"
+        android:label="fragment_do_manfacturer_production"
+        tools:layout="@layout/fragment_do_manfacturer_production" />
+    <fragment
+        android:id="@+id/fragment_do_manufacturer_sell"
+        android:name="com.project.drugmanagement.HomeScreen.DrugOfficer.fragment_do_manufacturer_sell"
+        android:label="fragment_do_manufacturer_sell"
+        tools:layout="@layout/fragment_do_manufacturer_sell" />
+    <fragment
+        android:id="@+id/fragment_do_depo_purchase"
+        android:name="com.project.drugmanagement.HomeScreen.DrugOfficer.fragment_do_depo_purchase"
+        android:label="fragment_do_depo_purchase"
+        tools:layout="@layout/fragment_do_depo_purchase" />
+    <fragment
+        android:id="@+id/fragment_do_depo_sell"
+        android:name="com.project.drugmanagement.HomeScreen.DrugOfficer.fragment_do_depo_sell"
+        android:label="fragment_do_depo_sell"
+        tools:layout="@layout/fragment_do_depo_sell" />
+    <fragment
+        android:id="@+id/fragment_do_wholesaler_purchase"
+        android:name="com.project.drugmanagement.HomeScreen.DrugOfficer.fragment_do_wholesaler_purchase"
+        android:label="fragment_do_wholesaler_purchase"
+        tools:layout="@layout/fragment_do_wholesaler_purchase" />
+    <fragment
+        android:id="@+id/fragment_do_wholesaler_sell"
+        android:name="com.project.drugmanagement.HomeScreen.DrugOfficer.fragment_do_wholesaler_sell"
+        android:label="fragment_do_wholesaler_sell"
+        tools:layout="@layout/fragment_do_wholesaler_sell" />
+    <fragment
+        android:id="@+id/fragment_do_retailer_purchase"
+        android:name="com.project.drugmanagement.HomeScreen.DrugOfficer.fragment_do_retailer_purchase"
+        android:label="fragment_do_retailer_purchase"
+        tools:layout="@layout/fragment_do_retailer_purchase" />
+    <fragment
+        android:id="@+id/fragment_do_retailer_sell"
+        android:name="com.project.drugmanagement.HomeScreen.DrugOfficer.fragment_do_retailer_sell"
+        android:label="fragment_do_retailer_sell"
+        tools:layout="@layout/fragment_do_retailer_sell" />
+</navigation>

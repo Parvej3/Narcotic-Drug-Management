@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".HomeScreen.Manufacturer.fragment_manuf_home">
+
+
+    <Button
+        android:id="@+id/btnAddUserDetails"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Add User Details"
+        android:textSize="20sp"
+        android:padding="15dp"
+        android:layout_marginTop="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <Button
+        android:id="@+id/btnAddNewProduct"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Create New Product"
+        android:textSize="20sp"
+        android:padding="15dp"
+        android:layout_marginTop="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btnAddUserDetails" />
+    <Button
+        android:id="@+id/btnAddProductionDetail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Production"
+        android:textSize="20sp"
+        android:padding="15dp"
+        android:layout_marginTop="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btnAddNewProduct"/>
+    <Button
+        android:id="@+id/btnSell"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Sell"
+        android:textSize="20sp"
+        android:padding="15dp"
+        android:layout_marginTop="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btnAddProductionDetail"
+         />
+</androidx.constraintlayout.widget.ConstraintLayout>

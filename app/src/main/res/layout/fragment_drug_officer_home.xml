@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".HomeScreen.DrugOfficer.fragment_drugOfficer_home">
+
+
+    <Button
+        android:id="@+id/btnManufacturer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Manufacturer"
+        android:textSize="20sp"
+        android:padding="15dp"
+        android:layout_marginTop="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <Button
+        android:id="@+id/btnDepo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Depo"
+        android:textSize="20sp"
+        android:padding="15dp"
+        android:layout_marginTop="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btnManufacturer" />
+    <Button
+        android:id="@+id/btnWholesaler"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Wholesaler"
+        android:textSize="20sp"
+        android:padding="15dp"
+        android:layout_marginTop="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btnDepo"/>
+    <Button
+        android:id="@+id/btnRetailer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Retailer"
+        android:textSize="20sp"
+        android:padding="15dp"
+        android:layout_marginTop="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btnWholesaler"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

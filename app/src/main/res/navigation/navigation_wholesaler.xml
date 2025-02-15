@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation_wholesaler"
+    app:startDestination="@id/fragment_wholesaler_home">
+
+    <fragment
+        android:id="@+id/fragment_wholesaler_home"
+        android:name="com.project.drugmanagement.HomeScreen.Wholesaler.fragment_wholesaler_home"
+        android:label="fragment_wholesaler_home"
+        tools:layout="@layout/fragment_wholesaler_home" >
+        <action
+            android:id="@+id/action_fragment_wholesaler_home_to_addUserDetails3"
+            app:destination="@id/addUserDetails3" />
+        <action
+            android:id="@+id/action_fragment_wholesaler_home_to_fragment_wholesaler_sell"
+            app:destination="@id/fragment_wholesaler_sell" />
+    </fragment>
+    <activity
+        android:id="@+id/addUserDetails3"
+        android:name="com.project.drugmanagement.AddUserDetails"
+        android:label="activity_add_user_details"
+        tools:layout="@layout/activity_add_user_details" />
+    <fragment
+        android:id="@+id/fragment_wholesaler_sell"
+        android:name="com.project.drugmanagement.HomeScreen.Wholesaler.fragment_wholesaler_sell"
+        android:label="fragment_wholesaler_sell"
+        tools:layout="@layout/fragment_wholesaler_sell" />
+</navigation>

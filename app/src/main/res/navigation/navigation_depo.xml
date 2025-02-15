@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation_depo"
+    app:startDestination="@id/fragment_depo_home">
+
+    <fragment
+        android:id="@+id/fragment_depo_home"
+        android:name="com.project.drugmanagement.HomeScreen.Depo.fragment_depo_home"
+        android:label="fragment_depo_home"
+        tools:layout="@layout/fragment_depo_home" >
+        <action
+            android:id="@+id/action_fragment_depo_home_to_addUserDetails2"
+            app:destination="@id/addUserDetails2" />
+        <action
+            android:id="@+id/action_fragment_depo_home_to_fragmnet_depo_sell"
+            app:destination="@id/fragmnet_depo_sell" />
+    </fragment>
+    <activity
+        android:id="@+id/addUserDetails2"
+        android:name="com.project.drugmanagement.AddUserDetails"
+        android:label="activity_add_user_details"
+        tools:layout="@layout/activity_add_user_details" />
+    <fragment
+        android:id="@+id/fragmnet_depo_sell"
+        android:name="com.project.drugmanagement.HomeScreen.Depo.fragmnet_depo_sell"
+        android:label="fragment_fragmnet_depo_sell"
+        tools:layout="@layout/fragment_fragmnet_depo_sell" />
+</navigation>
