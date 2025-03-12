@@ -29,7 +29,7 @@ This project aims to minimize errors, prevent misuse, and streamline operations 
 1. Clone the repository:
 
    ```sh
-   git clone https://github.com/yourusername/narcotic-drug-management.git
+   git clone https://github.com/Parvej3/narcotic-drug-management.git
    ```
 
 2. Navigate to the project directory:
